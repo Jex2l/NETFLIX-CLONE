@@ -1,0 +1,78 @@
+.login-main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.login-component {
+  padding: 3%;
+}
+.login-component-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-forget-password {
+  text-decoration: none;
+  color: white;
+}
+.login-forget-password:hover {
+  text-decoration: underline;
+}
+.login-component input {
+  padding: 3% 1%;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.login-component input:focus {
+  outline: none;
+}
+.login-frame {
+  padding: 5%;
+  background-color: black;
+  box-shadow: 2px 3px 12px #494949;
+}
+.login-divider {
+  margin-top: 3%;
+}
+.login-component-4 {
+  text-align: center;
+}
+.social-login ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+.social-login ul li {
+  cursor: pointer;
+}
+.login-facebook:hover {
+  color: #4267b2;
+}
+.login-instagram:hover {
+  color: #cd486b;
+}
+.login-twitter:hover {
+  color: #00acee;
+}
+.back-login {
+  text-decoration: none;
+  color: white;
+  margin-top: 3%;
+}
+.back-login:hover {
+  text-decoration: underline;
+}
+.signup-container {
+  margin-top: 30px;
+  height: fit-content;
+}
+.login-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}

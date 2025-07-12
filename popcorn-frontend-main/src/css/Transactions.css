@@ -1,0 +1,9 @@
+.transactions-container {
+  width: 40vw;
+  margin-top: 10px;
+}
+.transactions-main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}

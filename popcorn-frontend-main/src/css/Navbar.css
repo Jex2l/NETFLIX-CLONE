@@ -1,0 +1,113 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0px 0px 18px -5px black;
+}
+.nav-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.nav-part ul {
+  display: flex;
+  list-style-type: none;
+}
+.bars {
+  text-decoration: none;
+  color: white;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+}
+.nav-part-1-item {
+  padding: 0px 15px;
+}
+.nav-part-2-item {
+  padding: 0px 20px;
+  font-size: 20px;
+}
+.nav-part-2-item:hover {
+  padding: 0px 20px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.nav-part-3-item {
+  padding: 0px 15px;
+}
+.fa-bars {
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 9px;
+}
+#nav-part-3-item-1 {
+  border: 2px solid white;
+  display: flex;
+  padding: 5px;
+  background-color: white;
+  border-radius: 20px;
+}
+#nav-part-3-item-1 i {
+  display: flex;
+  font-size: larger;
+  align-items: center;
+  color: gray;
+  cursor: pointer;
+}
+#nav-part-3-item-1 input:focus {
+  outline: none;
+}
+#nav-part-3-item-1 input {
+  border: none;
+}
+.nav-menu {
+  text-decoration: none;
+  color: white;
+}
+.fa-user {
+  margin-top: 17px;
+  height: 0px;
+  cursor: pointer;
+}
+.nav-user-dropdown {
+  position: absolute;
+  display: none;
+  margin-top: 3px;
+  background-color: white;
+  padding: 20px;
+}
+.nav-user-dropdown-link {
+  text-decoration: none;
+  color: black;
+}
+.nav-user-dropdown-1 {
+  margin-top: 10px;
+}
+.nav-part-3-item:hover .nav-user-dropdown {
+  display: block;
+  z-index: 1001;
+}
+@media screen and (max-width: 1200px) {
+  #nav-part-2 {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main {
+    flex-wrap: wrap;
+  }
+  #nav-part-3 {
+    margin-top: 50px;
+  }
+}

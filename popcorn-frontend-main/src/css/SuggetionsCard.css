@@ -1,0 +1,29 @@
+.suggetion-card-container {
+  padding: 1%;
+}
+.suggetion-card-main {
+  color: white;
+  margin-top: 2%;
+  padding: 0% 1%;
+}
+.suggetion-card-genre {
+  color: gray;
+}
+.suggetion-card-poster img {
+  width: 210px;
+  height: 105px;
+}
+.suggetion-card-link {
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  .suggetion-card-poster img {
+    width: 150px;
+    height: 75px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .suggetion-card-container {
+    justify-content: center;
+  }
+}

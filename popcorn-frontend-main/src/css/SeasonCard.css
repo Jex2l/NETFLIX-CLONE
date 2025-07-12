@@ -1,0 +1,9 @@
+.suggetion-card-name h3 {
+  width: 250px;
+  border: 1px solid red;
+}
+@media screen and (max-width: 522px) {
+  .suggetion-card-name h3 {
+    width: 100px;
+  }
+}

@@ -1,0 +1,18 @@
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pricing-card {
+  width: 20vw;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 20px;
+}
+.pricing-main {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

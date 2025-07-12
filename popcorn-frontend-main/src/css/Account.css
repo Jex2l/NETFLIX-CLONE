@@ -1,0 +1,20 @@
+.profile-main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-container {
+  width: 50%;
+}
+.profile-content {
+  padding: 10px;
+}
+.profile-card {
+  background-color: black;
+  color: white;
+}
+.profile-input {
+  background-color: white;
+  border-radius: 10px;
+}

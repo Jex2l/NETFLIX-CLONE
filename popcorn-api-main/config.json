@@ -1,0 +1,17 @@
+{
+  "server": {
+    "host": "http://popcornapi.movizrate.cloud",
+    "port": 7000
+  },
+  "auth": {
+    "JWT_SECRET": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.-DprLrW2OyqiAFiuWs14WO2TWp2EHtaX7a63dqrklk-xrjaZMrcPhpX4hkZw803SQx5HpGc-7VYBX8l82XlMZg"
+  },
+  "email": {
+    "id": "pratikgaikwad1004@gmail.com",
+    "password": "zngnymzkgbjarexp"
+  },
+  "payment": {
+    "key": "rzp_test_xyTdkBdSW6WJXk",
+    "secret": "5R7n6rkVfTzdLgJeWZL1fUsq"
+  }
+}

@@ -1,0 +1,9 @@
+.watch-movie-suggentions {
+  padding: 2% 2%;
+}
+.suggetions-container {
+  display: flex;
+  padding: 1% 0%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

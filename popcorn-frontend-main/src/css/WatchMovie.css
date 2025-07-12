@@ -1,0 +1,8 @@
+.watch-movie-container {
+  margin-top: 10px;
+}
+.watch-movie-poster {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

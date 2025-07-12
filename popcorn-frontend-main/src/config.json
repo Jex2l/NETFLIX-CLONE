@@ -1,0 +1,17 @@
+{
+  "api": {
+    "auth": "http://popcornapi.movizrate.cloud/api/auth",
+    "movies": "http://popcornapi.movizrate.cloud/api/movies",
+    "webseries": "http://popcornapi.movizrate.cloud/api/webseries",
+    "carousel": "http://popcornapi.movizrate.cloud/api/carousel",
+    "filter": "http://popcornapi.movizrate.cloud/api/filter",
+    "payment": "http://popcornapi.movizrate.cloud/api/payment"
+  },
+  "mail": {
+    "url": "http://popcorn.movizrate.cloud/verify"
+  },
+  "payment": {
+    "key": "rzp_test_gLNr8sqIvzM92n",
+    "secret": "OoNCgzuHkCMHY1TLG7uBjKbE"
+  }
+}

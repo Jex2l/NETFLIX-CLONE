@@ -1,0 +1,29 @@
+.change-carousel-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.change-carousel-main {
+  width: 50%;
+}
+.carousel-form {
+  padding: 10px 0px;
+}
+.form-item {
+  padding: 5px 0px;
+}
+.form-item-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+.change-carousel-main h1 {
+  text-align: center;
+}
+@media screen and (max-width: 550px) {
+  .change-carousel-main {
+    width: 80%;
+  }
+}

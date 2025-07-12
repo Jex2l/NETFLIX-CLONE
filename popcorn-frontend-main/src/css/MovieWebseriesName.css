@@ -1,0 +1,44 @@
+.watch-movie-name-container {
+  padding: 0% 2%;
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.watch-movie-genre,
+.watch-movie-likes {
+  color: gray;
+}
+.watch-movie-name {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
+.watch-movie-description {
+  font-size: 20px;
+  padding: 2% 0%;
+}
+.watch-movie-description {
+  background-color: rgb(28, 33, 46);
+  padding: 2% 2%;
+}
+.watch-movie-likes {
+  padding: 0% 0%;
+  padding-right: 10%;
+}
+.name-right-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 10%;
+}
+#fav {
+  font-size: 40px;
+}
+@media screen and (max-width: 1172px) {
+  .movie-rating-side {
+    padding: 20% 0%;
+  }
+}

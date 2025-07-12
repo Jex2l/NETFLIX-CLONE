@@ -1,0 +1,34 @@
+.container-carousel {
+  padding: 5%;
+}
+.main-carousel {
+  width: 100%;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fa-chevron-right {
+  color: black;
+}
+.fa-chevron-left {
+  color: black;
+}
+.carousel-movie-genre ul {
+  list-style-type: none;
+  display: flex;
+}
+.carousel-movie-genre ul li {
+  padding-right: 2%;
+}
+.carousel-genre {
+  border-right: 1px solid white;
+}
+.carousel-genre-li {
+  padding-left: 2%;
+}
+.carousel-1 {
+  padding: 1%;
+  margin-left: 10%;
+}

@@ -1,0 +1,6 @@
+{
+  "api": {
+    "fileServer": "http://popcorndataserver.movizrate.cloud",
+    "dataserver": "http://popcornapi.movizrate.cloud"
+  }
+}

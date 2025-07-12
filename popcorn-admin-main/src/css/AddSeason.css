@@ -1,0 +1,30 @@
+.add-season-main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select-webseries-season {
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px 0px;
+}
+.mb-3 {
+  padding: 10px;
+}
+.mt-5 {
+  width: 50%;
+}
+.add-season-btns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.season-add-btn {
+  margin-top: 10px;
+}
+@media screen and (max-width: 500px) {
+  .mt-5 {
+    width: 80%;
+  }
+}

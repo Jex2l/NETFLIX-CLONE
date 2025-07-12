@@ -1,0 +1,52 @@
+.card-items {
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  padding: 1%;
+}
+.card-main {
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 2%;
+  padding: 1%;
+}
+.card-main h3 {
+  width: 250px;
+}
+.card-genre {
+  color: gray;
+}
+.card-poster img {
+  width: 240px;
+  height: 115px;
+}
+.web-series-header {
+  margin-left: 5%;
+  margin-top: 2%;
+  color: white;
+}
+.movie-show-all-btn {
+  display: flex;
+  justify-content: center;
+}
+.card-link {
+  text-decoration: none;
+}
+.suggetion-card-name h3 {
+  width: 250px;
+}
+@media screen and (max-width: 522px) {
+  .card-poster img {
+    width: 150px;
+    height: 75px;
+  }
+  .card-main h3 {
+    width: 170px;
+  }
+  .suggetion-card-name h3 {
+    width: 170px;
+  }
+}
