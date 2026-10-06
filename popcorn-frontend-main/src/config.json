@@ -11,7 +11,6 @@
     "url": "http://popcorn.movizrate.cloud/verify"
   },
   "payment": {
-    "key": "rzp_test_gLNr8sqIvzM92n",
-    "secret": "OoNCgzuHkCMHY1TLG7uBjKbE"
+    "key": "rzp_test_gLNr8sqIvzM92n"
   }
 }

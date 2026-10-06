@@ -1,14 +1,17 @@
+require("dotenv").config();
 const express = require("express");
-// const fileUplod = require("express-fileupload");
 const cors = require("cors");
 const multer = require("multer");
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
+// Public base URL this server's uploaded files are reachable at - defaults to
+// localhost for local dev, override with FILE_SERVER_BASE_URL in production.
+const BASE_URL = process.env.FILE_SERVER_BASE_URL || `http://localhost:${PORT}`;
+
 app.use("", express.static("videos"));
 app.use("", express.static("images"));
 app.use(cors());
 
-// Code for upload image using multer
 const storageImage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "images/");
@@ -18,15 +21,9 @@ const storageImage = multer.diskStorage({
     let extension = fileExeArr[fileExeArr.length - 1];
     cb(null, Date.now() + `.${extension}`);
   },
-  fileFilter: function (req, file, cb) {
-    if (file === null) {
-      return cb(new Error("File cannot be empty."));
-    }
-  },
 });
 const uploadImage = multer({ storage: storageImage });
 
-// Code for upload image using multer
 const storageMovie = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "videos/");
@@ -36,11 +33,6 @@ const storageMovie = multer.diskStorage({
     let extension = fileExeArr[fileExeArr.length - 1];
     cb(null, Date.now() + `.${extension}`);
   },
-  fileFilter: function (req, file, cb) {
-    if (file === null) {
-      return cb(new Error("File cannot be empty."));
-    }
-  },
 });
 const uploadMovie = multer({ storage: storageMovie });
 
@@ -49,24 +41,24 @@ app.get("/", (req, res) => {
 })
 
 app.post("/uploadimage", uploadImage.single("file"), async (req, res) => {
-  if (req.file === null) {
-    res.status(400).json({ msg: "No file found" });
+  if (!req.file) {
+    return res.status(400).json({ msg: "No file found" });
   }
   res.set('Access-Control-Allow-Origin', '*');
   res.json({
-    filePath: `http://popcorndataserver.movizrate.cloud/${req.file.filename}`,
+    filePath: `${BASE_URL}/${req.file.filename}`,
     fileName: req.file.filename,
     msg: "Image uploaded",
   });
 });
 
 app.post("/uploadmovie", uploadMovie.single("file"), function (req, res) {
-  if (req.file === null) {
-    res.status(400).json({ msg: "No file found" });
+  if (!req.file) {
+    return res.status(400).json({ msg: "No file found" });
   }
   res.set('Access-Control-Allow-Origin', '*');
   res.json({
-    filePath: `http://popcorndataserver.movizrate.cloud/${req.file.filename}`,
+    filePath: `${BASE_URL}/${req.file.filename}`,
     fileName: req.file.filename,
     msg: "Video uploaded",
   });

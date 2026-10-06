@@ -1,15 +1,13 @@
+require("dotenv").config();
 const mongoose = require("mongoose");
 
-const MongoURI = "mongodb://172.17.0.1:27017/popcorn";
+const MongoURI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/popcorn";
 
 const connect = () => {
-  mongoose.connect(MongoURI, () => {
-    console.log("Connected to mongo successfully");
-  });
+  mongoose
+    .connect(MongoURI)
+    .then(() => console.log("Connected to mongo successfully"))
+    .catch((err) => console.error("Failed to connect to mongo:", err.message));
 };
-
-if (!connect) {
-  console.log("Not connected to mongo");
-}
 
 module.exports = connect;
